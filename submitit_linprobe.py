@@ -105,7 +105,7 @@ def main():
     executor.update_parameters(
         mem_gb=40 * num_gpus_per_node,
         gpus_per_node=num_gpus_per_node,
-        tasks_per_node=num_gpus_per_node, # one task per GPU
+        tasks_per_node=num_gpus_per_node,  # one task per GPU
         cpus_per_task=10,
         nodes=nodes,
         timeout_min=timeout_min,
